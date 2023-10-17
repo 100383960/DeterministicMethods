@@ -1,6 +1,6 @@
 # DeterministicMethods
 
-GitHub repository containing algorithms of deterministic methods for the course "Introduction to Robot Planning" from the Master's in Robotics and Automation at the U
+GitHub repository containing algorithms of deterministic methods for the course "Introduction to Robot Planning" from the Master's in Robotics and Automation at the University Carlos III de Madrid.
 
 ## Table of Contents
 
