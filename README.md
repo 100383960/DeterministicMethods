@@ -16,5 +16,5 @@ GitHub repository containing algorithms of deterministic methods for the course 
 ## Usage
 
 1. Locate the python files with the algorithms under the [src](src/) folder.
-2. Make sure the relative path points to any of the .csv files under the map folders. Change the path if necessary.
+2. Open the algorithm you want to test and make sure the relative path points to any of the .csv files under the map folders. Change the path if necessary.
 3. Execute the python file with: python3 (algorithm_name).py 
