@@ -1,6 +1,7 @@
-import pygame
-
 #! /usr/bin/env python
+
+import pygame
+import time
 
 """
 # Notactión
@@ -35,11 +36,11 @@ Nós
 #FILE_NAME = "/usr/local/share/master-ipr/map1/map1.csv" # Linux-style absolute path
 #FILE_NAME = "C:\\Users\\USER_NAME\\Downloads\\master-ipr\\map1\\map1.csv" # Windows-style absolute path, note the `\\` and edit `USER_NAME`
 #FILE_NAME = "../../../../map1/map1.csv" # Linux-style relative path
-FILE_NAME = "../map9/map9.csv" # Linux-style relative path
-START_X = 4
-START_Y = 10
-END_X = 4
-END_Y = 16
+FILE_NAME = "../map11/map11.csv" # Linux-style relative path
+START_X = 3
+START_Y = 15
+END_X = 3
+END_Y = 9
 
 # # Define Node class (A nivel grafo/nodo)
 
@@ -135,6 +136,7 @@ def obtain_min_node(nodes):
     return min_node
 
 
+start_time = time.time()
 
 while not done:
     current_node = obtain_min_node(nodes)
@@ -459,6 +461,11 @@ while not done:
     print("Current node: ", current_node.myId)
 
     nodes.remove(current_node)
+
+end_time = time.time()
+execution_time = end_time - start_time
+
+print(f"Execution time: {execution_time} seconds")
 
 
 #########################################################

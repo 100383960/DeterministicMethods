@@ -1,6 +1,7 @@
-import pygame
-
 #! /usr/bin/env python
+
+import pygame
+import time
 
 """
 # Notactión
@@ -36,10 +37,10 @@ Nós
 #FILE_NAME = "C:\\Users\\USER_NAME\\Downloads\\master-ipr\\map1\\map1.csv" # Windows-style absolute path, note the `\\` and edit `USER_NAME`
 #FILE_NAME = "../../../../map1/map1.csv" # Linux-style relative path
 FILE_NAME = "../map9/map9.csv" # Linux-style relative path
-START_X = 4
-START_Y = 10
-END_X = 4
-END_Y = 16
+START_X = 3
+START_Y = 9
+END_X = 3
+END_Y = 15
 
 # # Define Node class (A nivel grafo/nodo)
 
@@ -104,6 +105,8 @@ nodes.append(init)
 done = False  # clásica condición de parada del bucle `while`
 goalParentId = -1  # -1: parentId del nodo goal PROVISIONAL cuando aun no se ha resuelto
 
+start_time = time.time()
+
 while not done:
     print("--------------------- number of nodes: "+str(len(nodes)))
     for node in nodes:
@@ -167,8 +170,10 @@ while not done:
 
         dumpMap()
 
+end_time = time.time()
+execution_time = end_time - start_time
 
-
+print(f"Execution time: {execution_time} seconds")
 
 # initialize the pygame module
 pygame.init()

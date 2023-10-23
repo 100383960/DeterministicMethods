@@ -1,6 +1,7 @@
-import pygame
-
 #! /usr/bin/env python
+
+import pygame
+import time
 
 """
 # Notactión
@@ -35,11 +36,11 @@ Nós
 #FILE_NAME = "/usr/local/share/master-ipr/map1/map1.csv" # Linux-style absolute path
 #FILE_NAME = "C:\\Users\\USER_NAME\\Downloads\\master-ipr\\map1\\map1.csv" # Windows-style absolute path, note the `\\` and edit `USER_NAME`
 #FILE_NAME = "../../../../map1/map1.csv" # Linux-style relative path
-FILE_NAME = "../map9/map9.csv" # Windows-style relative path, note the `\\`
-START_X = 4
-START_Y = 10
-END_X = 4
-END_Y = 16
+FILE_NAME = "../map11/map11.csv" # Windows-style relative path, note the `\\`
+START_X = 3
+START_Y = 15
+END_X = 3
+END_Y = 9
 
 # # Define Node class (A nivel grafo/nodo)
 
@@ -185,9 +186,15 @@ def dfs(nodes, charMap):
 
 # MAIN ALGORITHM EXECUTION
 
+start_time = time.time()
+
 while not done:
     dfs(nodes, charMap)
 
+end_time = time.time()
+execution_time = end_time - start_time
+
+print(f"Execution time: {execution_time} seconds")
 
 ########################################################
 ################### VISUALIZATION ######################
