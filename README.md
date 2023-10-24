@@ -27,3 +27,9 @@ The three algorithms (Breadth First Search, Depth First Search and A*) have been
 ![algorithm_comparison](https://github.com/100383960/DeterministicMethods/assets/132466648/c37bcb97-09da-4084-acba-1cb7d18f00b2)
 
 The DFS algorithm has the fastest performance when used in more complex maps, followed by the A* algorithm. The BFS algorithm was the slowest algorithm in most of the tested maps. However, the A* algorithm provides the shortest routes from the starting point to the goal for every map. The following image shows the results for the BFS, DFS and A* algorithms for a complex map.
+
+![bfs](results/bfs_map7.png)
+
+![dfs](results/dfs_map7.png)
+
+![astar](results/astar_map7.png)
