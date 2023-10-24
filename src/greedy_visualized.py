@@ -36,11 +36,11 @@ Nós
 #FILE_NAME = "/usr/local/share/master-ipr/map1/map1.csv" # Linux-style absolute path
 #FILE_NAME = "C:\\Users\\USER_NAME\\Downloads\\master-ipr\\map1\\map1.csv" # Windows-style absolute path, note the `\\` and edit `USER_NAME`
 #FILE_NAME = "../../../../map1/map1.csv" # Linux-style relative path
-FILE_NAME = "../map11/map11.csv" # Windows-style relative path, note the `\\`
+FILE_NAME = "../map7/map7.csv" # Windows-style relative path, note the `\\`
 START_X = 3
-START_Y = 15
+START_Y = 9
 END_X = 3
-END_Y = 9
+END_Y = 15
 
 # # Define Node class (A nivel grafo/nodo)
 
@@ -205,7 +205,7 @@ print(f"Execution time: {execution_time} seconds")
 
 pygame.init()
 
-pygame.display.set_caption("Map Visualization")
+pygame.display.set_caption("DEPTH FIRST SEARCH")
 
 # Create screen of size of 600 x 600
 screen_width = 600

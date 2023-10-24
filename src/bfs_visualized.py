@@ -36,7 +36,7 @@ Nós
 #FILE_NAME = "/usr/local/share/master-ipr/map1/map1.csv" # Linux-style absolute path
 #FILE_NAME = "C:\\Users\\USER_NAME\\Downloads\\master-ipr\\map1\\map1.csv" # Windows-style absolute path, note the `\\` and edit `USER_NAME`
 #FILE_NAME = "../../../../map1/map1.csv" # Linux-style relative path
-FILE_NAME = "../map9/map9.csv" # Linux-style relative path
+FILE_NAME = "../map7/map7.csv" # Linux-style relative path
 START_X = 3
 START_Y = 9
 END_X = 3
@@ -185,7 +185,7 @@ print(f"Execution time: {execution_time} seconds")
 # initialize the pygame module
 pygame.init()
 
-pygame.display.set_caption("Map Visualization")
+pygame.display.set_caption("BREADTH FIRST SEARCH")
 
 # create a surface on screen that has the size of 240 x 180
 screen_width = 600

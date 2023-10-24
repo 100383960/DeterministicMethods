@@ -36,11 +36,11 @@ Nós
 #FILE_NAME = "/usr/local/share/master-ipr/map1/map1.csv" # Linux-style absolute path
 #FILE_NAME = "C:\\Users\\USER_NAME\\Downloads\\master-ipr\\map1\\map1.csv" # Windows-style absolute path, note the `\\` and edit `USER_NAME`
 #FILE_NAME = "../../../../map1/map1.csv" # Linux-style relative path
-FILE_NAME = "../map11/map11.csv" # Linux-style relative path
+FILE_NAME = "../map7/map7.csv" # Linux-style relative path
 START_X = 3
-START_Y = 15
+START_Y = 9
 END_X = 3
-END_Y = 9
+END_Y = 15
 
 # # Define Node class (A nivel grafo/nodo)
 
@@ -484,7 +484,7 @@ pygame.init()
 # logo = pygame.image.load("logo32x32.png")
 # pygame.display.set_icon(logo)
 
-pygame.display.set_caption("Map Visualization")
+pygame.display.set_caption("A STAR")
 
 # create a surface on screen that has the size of 240 x 180
 screen_width = 600
@@ -496,18 +496,6 @@ running = True
 
 # Mapa
 
-"""
-map = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 1, 1, 1, 1, 1, 0, 0, 0, 1],
-        [1, 1, 1, 1, 1, 1, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
-"""
 
 map_rows = len(charMap)
 map_cols = len(charMap[0])
