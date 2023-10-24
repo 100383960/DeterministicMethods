@@ -175,11 +175,15 @@ execution_time = end_time - start_time
 
 print(f"Execution time: {execution_time} seconds")
 
+
+
+########################################################
+################### VISUALIZATION ######################
+########################################################
+
+
 # initialize the pygame module
 pygame.init()
-# load and set the logo
-# logo = pygame.image.load("logo32x32.png")
-# pygame.display.set_icon(logo)
 
 pygame.display.set_caption("Map Visualization")
 
@@ -191,20 +195,7 @@ screen = pygame.display.set_mode((screen_width,screen_height))
 # define a variable to control the main loop
 running = True
 
-# Mapa
-
-"""
-map = [[1, 1, 1, 1, 1, 1, 1, 1, 1, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 1, 1, 1, 1, 1, 0, 0, 0, 1],
-        [1, 1, 1, 1, 1, 1, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 0, 0, 0, 0, 0, 0, 0, 0, 1],
-        [1, 1, 1, 1, 1, 1, 1, 1, 1, 1]]
-"""
+# Int Map
 
 map_rows = len(charMap)
 map_cols = len(charMap[0])
@@ -246,7 +237,6 @@ end_center = (cell_width*(END_Y+0.5), cell_height*(END_X+0.5))
 end_radius = (cell_width*0.2)
 
 # Drawing crosses
-
 
 font = pygame.font.Font(None, round(60*size_coef))
 cross = font.render("x", True, (104, 139, 240))

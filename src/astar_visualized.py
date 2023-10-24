@@ -138,6 +138,12 @@ def obtain_min_node(nodes):
 
 start_time = time.time()
 
+# ALGORITMO A*
+# En cada iteración se visita el nodo con menor coste
+# Si el nodo es la meta termina
+# Si el nodo no está visitado calcula su coste y lo añade
+# Si el nodo está visitado, calcula su coste y si es menor al anterior, lo reemplaza
+
 while not done:
     current_node = obtain_min_node(nodes)
 

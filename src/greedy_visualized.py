@@ -188,6 +188,9 @@ def dfs(nodes, charMap):
 
 start_time = time.time()
 
+# El algoritmo greedy llama de forma recursiva a la función dfs()
+# En cada nodo, si algún nodo vecino no está visitado, lo visita llamando a dfs()
+
 while not done:
     dfs(nodes, charMap)
 
